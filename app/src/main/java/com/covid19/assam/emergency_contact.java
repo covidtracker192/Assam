@@ -32,29 +32,7 @@ public class emergency_contact extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:+91104"));
-                startActivity(intent);
-            }
-        });
-
-        TextView fhnn;
-        fhnn=findViewById(R.id.textView43);
-        fhnn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:+919423890077"));
-                startActivity(intent);
-            }
-        });
-
-        TextView fhns;
-        fhns=findViewById(R.id.textView45);
-        fhns.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:+919423890066"));
+                intent.setData(Uri.parse("tel:+91-6913347770"));
                 startActivity(intent);
             }
         });
@@ -64,7 +42,7 @@ public class emergency_contact extends AppCompatActivity {
         web.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uriUrl = Uri.parse("https://www.mohfw.gov.in");
+                Uri uriUrl = Uri.parse("https://covid19.assam.gov.in/contact-us/");
                 Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                 startActivity(launchBrowser);
             }
